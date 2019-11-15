@@ -2,7 +2,7 @@
 
 `<exclude>` over source file names does not exclude
 the `@Nested` test classes, defined inside the matching
-source files, if they end with `Tests`.
+source files, if they end with `Tests`: https://issues.apache.org/jira/browse/SUREFIRE-1720
 
 See `dt.AppIntegrationTest.ApiTests`: all tests inside this
 file must be excluded, but `ApiTests` are included.
